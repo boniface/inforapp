@@ -46,4 +46,32 @@
     <color name="blue_grey_light">#A5B4C8</color>
     <color name="orange">#FFA500</color>
     <color name="yellow">#fff44f</color>
+
+    <!--INfoshare Colors-->
+    <color name="grey_main">#929292</color>
+    <color name="i_contact_grey_light_1">#FFFFFF</color> 	<!--Contact (pamphlet)-->
+    <color name="grey_light_2" >#E1E0DF</color>
+    <color name="i_apptxt_grey_dark_1">#3d3d3d</color> 	    <!--Text (application)-->
+    <color name="i_txt_grey_dark_2" >#000000</color>		<!--Text-->
+
+    <color name="i_icon_blue_main">#2D5C78</color>         <!--Icons, buttons-->
+    <color name="blue_light_1"> #9BAFBB</color>
+    <color name="blue_light_2">#5C8298</color>
+    <color name="i_logo_blue_dark_1">#134461</color>              <!--Logo-->
+    <color name="i_title_blue_dark_2">#032B43</color>              <!--Titles, text (pamphlet)-->
+
+
+
+
+    <color name="purple_main">#612F7E</color>
+    <color name="pruple_light_1">#B59FC1</color>
+    <color name="purple_light_2">#8860A0</color>
+    <color name="purple_dark_1">#471466</color>
+    <color name="purple_dark_2">#2D0347</color>
+
+    <color name="i_btn_green_main">#91b23c</color>         <!--Buttons-->
+    <color name="i_bg_green_light_1">#E8F5C7</color>      <!--Background-->
+    <color name="i_hdr_green_light_2">#C7E283</color>       <!--Headers, footers-->
+    <color name="green_dark_1">#6E9015</color>
+    <color name="green_dark_2">#486400</color>
 </resources>

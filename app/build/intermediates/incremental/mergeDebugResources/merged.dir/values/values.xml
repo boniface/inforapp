@@ -26,6 +26,8 @@
     <color name="blue_black_dark">#13171d</color>
     <color name="blue_black_light">#516179</color>
     <color name="blue_grey_light">#A5B4C8</color>
+    <color name="blue_light_1"> #9BAFBB</color>
+    <color name="blue_light_2">#5C8298</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -64,8 +66,21 @@
     <color name="foreground_material_light">@android:color/black</color>
     <color name="google">#d34836</color>
     <color name="gray">#7e7e7e</color>
+    <color name="green_dark_1">#6E9015</color>
+    <color name="green_dark_2">#486400</color>
+    <color name="grey_light_2">#E1E0DF</color>
+    <color name="grey_main">#929292</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
+    <color name="i_apptxt_grey_dark_1">#3d3d3d</color>
+    <color name="i_bg_green_light_1">#E8F5C7</color>
+    <color name="i_btn_green_main">#91b23c</color>
+    <color name="i_contact_grey_light_1">#FFFFFF</color>
+    <color name="i_hdr_green_light_2">#C7E283</color>
+    <color name="i_icon_blue_main">#2D5C78</color>
+    <color name="i_logo_blue_dark_1">#134461</color>
+    <color name="i_title_blue_dark_2">#032B43</color>
+    <color name="i_txt_grey_dark_2">#000000</color>
     <color name="light_blue">#55C8F0</color>
     <color name="light_gray">#dbdbdb</color>
     <color name="light_green">#78DC96</color>
@@ -95,6 +110,11 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
+    <color name="pruple_light_1">#B59FC1</color>
+    <color name="purple_dark_1">#471466</color>
+    <color name="purple_dark_2">#2D0347</color>
+    <color name="purple_light_2">#8860A0</color>
+    <color name="purple_main">#612F7E</color>
     <color name="red_dark">#F06423</color>
     <color name="red_dark2">#D85A1B</color>
     <color name="ripple_material_dark">#33ffffff</color>
@@ -716,12 +736,12 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with <ns1:g example="Mail" id="application_name">%s</ns1:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="about">About</string>
+    <string name="about">About Infoshare</string>
     <string name="api_default_error">Something wrong happened!</string>
     <string name="api_retry_error">Please retry!</string>
     <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
     <string name="app_market_link">"market://details?id="</string>
-    <string name="app_name">MvpApp</string>
+    <string name="app_name">Infoshare</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="blog">Blog</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
@@ -736,7 +756,8 @@
     <string name="empty_email">Please provide a non empty email.</string>
     <string name="empty_password">Please provide a non empty password.</string>
     <string name="empty_screen">We do not have anything\nhere right now.</string>
-    <string name="feed">My Feed</string>
+    <string name="feed">My Stories</string>
+    <string name="institution">Organization</string>
     <string name="invalid_email">Please provide a valid email.</string>
     <string name="later">Later</string>
     <string name="link_mindorks_blog">3. https://blog.mindorks.com</string>
@@ -797,7 +818,7 @@
     </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowContentOverlay">@null</item>
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/i_bg_green_light_1</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColorPrimary">@color/black_effective</item>
@@ -1877,6 +1898,7 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:textSize">16sp</item>
         <item name="android:background">@drawable/button_bg</item>
+        <item name="android:colorBackground">@color/i_btn_green_main</item>
         <item name="android:foreground">?selectableItemBackground</item>
     </style>
     <style name="Button.Action.Negative" parent="Button">
@@ -2193,7 +2215,7 @@
         <item name="android:layout_marginBottom">2dp</item>
         <item name="android:layout_marginLeft">2dp</item>
         <item name="android:layout_marginRight">2dp</item>
-        <item name="android:textColor">@color/black_effective</item>
+        <item name="android:textColor">@color/i_txt_grey_dark_2</item>
     </style>
     <style name="TextStyle.Comment" parent="TextStyle">
         <item name="android:textSize">16sp</item>
@@ -2208,6 +2230,7 @@
     </style>
     <style name="TextStyle.Title" parent="TextStyle">
         <item name="android:textAppearance">@style/TextAppearance.Text.Regular</item>
+        <item name="android:textColor">@color/i_title_blue_dark_2</item>
     </style>
     <style name="TextStyle.Title.Sub" parent="TextStyle.Title">
         <item name="android:textAppearance">@style/TextAppearance.Text.Light</item>

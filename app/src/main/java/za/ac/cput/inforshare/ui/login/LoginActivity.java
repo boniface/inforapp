@@ -20,6 +20,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 import za.ac.cput.inforshare.R;
 import za.ac.cput.inforshare.ui.base.BaseActivity;
@@ -32,9 +33,6 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 
-/**
- * Created by janisharali on 27/01/17.
- */
 
 public class LoginActivity extends BaseActivity implements LoginMvpView {
 
@@ -43,6 +41,9 @@ public class LoginActivity extends BaseActivity implements LoginMvpView {
 
     @BindView(R.id.et_email)
     EditText mEmailEditText;
+
+    @BindView(R.id.spn_institution)
+    Spinner mSpinner;
 
     @BindView(R.id.et_password)
     EditText mPasswordEditText;
@@ -66,18 +67,8 @@ public class LoginActivity extends BaseActivity implements LoginMvpView {
 
     @OnClick(R.id.btn_server_login)
     void onServerLoginClick(View v) {
-        mPresenter.onServerLoginClick(mEmailEditText.getText().toString(),
+        mPresenter.onServerLoginClick(mEmailEditText.getText().toString(),mSpinner.getSelectedItem().toString(),
                 mPasswordEditText.getText().toString());
-    }
-
-    @OnClick(R.id.ib_google_login)
-    void onGoogleLoginClick(View v) {
-        mPresenter.onGoogleLoginClick();
-    }
-
-    @OnClick(R.id.ib_fb_login)
-    void onFbLoginClick(View v) {
-        mPresenter.onFacebookLoginClick();
     }
 
     @Override
