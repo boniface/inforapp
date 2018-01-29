@@ -18,8 +18,8 @@ apply plugin: 'org.greenrobot.greendao'
 apply from: '../config/quality/quality.gradle'
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion 26
+    buildToolsVersion '26.0.0'
 
     defaultConfig {
         applicationId "za.ac.cput.inforshare"
