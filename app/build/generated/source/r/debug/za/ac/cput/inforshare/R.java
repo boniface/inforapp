@@ -3443,21 +3443,19 @@ public final class R {
     public static final int tv_app_version=0x7f0800d4;
     public static final int tv_email=0x7f0800d5;
     public static final int tv_message=0x7f0800d6;
-    public static final int tv_mindorks_blog=0x7f0800d7;
-    public static final int tv_mindorks_repo=0x7f0800d8;
-    public static final int tv_mvp_blog=0x7f0800d9;
-    public static final int tv_mvp_repo=0x7f0800da;
-    public static final int tv_name=0x7f0800db;
-    public static final int tv_question_txt=0x7f0800dc;
-    public static final int uniform=0x7f0800dd;
-    public static final int up=0x7f0800de;
-    public static final int useLogo=0x7f0800df;
-    public static final int view_offset_helper=0x7f0800e0;
-    public static final int view_play_store_rating=0x7f0800e1;
-    public static final int view_rating_message=0x7f0800e2;
-    public static final int visible=0x7f0800e3;
-    public static final int withText=0x7f0800e4;
-    public static final int wrap_content=0x7f0800e5;
+    public static final int tv_mvp_blog=0x7f0800d7;
+    public static final int tv_mvp_repo=0x7f0800d8;
+    public static final int tv_name=0x7f0800d9;
+    public static final int tv_question_txt=0x7f0800da;
+    public static final int uniform=0x7f0800db;
+    public static final int up=0x7f0800dc;
+    public static final int useLogo=0x7f0800dd;
+    public static final int view_offset_helper=0x7f0800de;
+    public static final int view_play_store_rating=0x7f0800df;
+    public static final int view_rating_message=0x7f0800e0;
+    public static final int visible=0x7f0800e1;
+    public static final int withText=0x7f0800e2;
+    public static final int wrap_content=0x7f0800e3;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -3552,7 +3550,8 @@ public final class R {
     public static final int main=0x7f0b0001;
   }
   public static final class mipmap {
-    public static final int ic_launcher=0x7f0c0000;
+    public static final int cput=0x7f0c0000;
+    public static final int ic_launcher=0x7f0c0001;
   }
   public static final class string {
     public static final int PORT_NUMBER=0x7f0d0000;
@@ -3609,39 +3608,37 @@ public final class R {
     public static final int institution=0x7f0d0033;
     public static final int invalid_email=0x7f0d0034;
     public static final int later=0x7f0d0035;
-    public static final int link_mindorks_blog=0x7f0d0036;
-    public static final int link_mindorks_repo=0x7f0d0037;
-    public static final int link_mvp_blog=0x7f0d0038;
-    public static final int link_mvp_repo=0x7f0d0039;
-    public static final int login=0x7f0d003a;
-    public static final int login_dummy=0x7f0d003b;
-    public static final int logout=0x7f0d003c;
-    public static final int open_drawer=0x7f0d003d;
-    public static final int open_source=0x7f0d003e;
-    public static final int password=0x7f0d003f;
-    public static final int password_toggle_content_description=0x7f0d0040;
-    public static final int paste=0x7f0d0041;
-    public static final int path_password_eye=0x7f0d0042;
-    public static final int path_password_eye_mask_strike_through=0x7f0d0043;
-    public static final int path_password_eye_mask_visible=0x7f0d0044;
-    public static final int path_password_strike_through=0x7f0d0045;
-    public static final int please_retry=0x7f0d0046;
-    public static final int project_info=0x7f0d0047;
-    public static final int rate_us=0x7f0d0048;
-    public static final int rating_message=0x7f0d0049;
-    public static final int rating_not_provided_error=0x7f0d004a;
-    public static final int rating_play_store_redirect_message_line_1=0x7f0d004b;
-    public static final int rating_play_store_redirect_message_line_2=0x7f0d004c;
-    public static final int rating_play_store_text=0x7f0d004d;
-    public static final int rating_thanks=0x7f0d004e;
-    public static final int retry=0x7f0d004f;
-    public static final int search_menu_title=0x7f0d0050;
-    public static final int share=0x7f0d0051;
-    public static final int some_error=0x7f0d0052;
-    public static final int status_bar_notification_info_overflow=0x7f0d0053;
-    public static final int submit=0x7f0d0054;
-    public static final int title=0x7f0d0055;
-    public static final int version=0x7f0d0056;
+    public static final int link_mvp_blog=0x7f0d0036;
+    public static final int link_mvp_repo=0x7f0d0037;
+    public static final int login=0x7f0d0038;
+    public static final int login_dummy=0x7f0d0039;
+    public static final int logout=0x7f0d003a;
+    public static final int open_drawer=0x7f0d003b;
+    public static final int open_source=0x7f0d003c;
+    public static final int password=0x7f0d003d;
+    public static final int password_toggle_content_description=0x7f0d003e;
+    public static final int paste=0x7f0d003f;
+    public static final int path_password_eye=0x7f0d0040;
+    public static final int path_password_eye_mask_strike_through=0x7f0d0041;
+    public static final int path_password_eye_mask_visible=0x7f0d0042;
+    public static final int path_password_strike_through=0x7f0d0043;
+    public static final int please_retry=0x7f0d0044;
+    public static final int project_info=0x7f0d0045;
+    public static final int rate_us=0x7f0d0046;
+    public static final int rating_message=0x7f0d0047;
+    public static final int rating_not_provided_error=0x7f0d0048;
+    public static final int rating_play_store_redirect_message_line_1=0x7f0d0049;
+    public static final int rating_play_store_redirect_message_line_2=0x7f0d004a;
+    public static final int rating_play_store_text=0x7f0d004b;
+    public static final int rating_thanks=0x7f0d004c;
+    public static final int retry=0x7f0d004d;
+    public static final int search_menu_title=0x7f0d004e;
+    public static final int share=0x7f0d004f;
+    public static final int some_error=0x7f0d0050;
+    public static final int status_bar_notification_info_overflow=0x7f0d0051;
+    public static final int submit=0x7f0d0052;
+    public static final int title=0x7f0d0053;
+    public static final int version=0x7f0d0054;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0e0000;

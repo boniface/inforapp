@@ -16,9 +16,9 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="android:windowContentOverlay">@null</item>
-        <item name="colorPrimary">@color/i_bg_green_light_1</item>
+
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textColorPrimary">@color/black_effective</item>
@@ -64,12 +64,12 @@
         <item name="android:layout_marginBottom">2dp</item>
         <item name="android:layout_marginLeft">2dp</item>
         <item name="android:layout_marginRight">2dp</item>
-        <item name="android:textColor">@color/i_txt_grey_dark_2</item>
+
     </style>
 
     <style name="TextStyle.Title" parent="TextStyle">
         <item name="android:textAppearance">@style/TextAppearance.Text.Regular</item>
-        <item name="android:textColor">@color/i_title_blue_dark_2</item>
+
     </style>
 
     <style name="TextStyle.Title.Sub" parent="TextStyle.Title">

@@ -23,10 +23,8 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="80dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         app:cardBackgroundColor="@color/i_btn_green_main"
         app:cardCornerRadius="7dp"
         app:cardElevation="22dp">
@@ -51,7 +49,7 @@
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="61dp"
                 android:textColorHint="@color/gray"
                 app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
 
@@ -62,6 +60,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
+                    android:layout_weight="1"
                     android:background="@drawable/input_border_bottom"
                     android:cursorVisible="true"
                     android:gravity="center|left|bottom"
@@ -73,7 +72,6 @@
                     android:textSize="18sp" />
 
             </android.support.design.widget.TextInputLayout>
-
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -82,18 +80,19 @@
 
                 <Spinner
                     android:id="@+id/spn_institution"
+                    style="@style/Platform.Widget.AppCompat.Spinner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="2"
                     android:visibility="invisible" />
 
             </android.support.design.widget.TextInputLayout>
-
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="76dp"
                 android:hint="@string/password"
                 android:textColorHint="@color/gray"
+
                 app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
                 app:passwordToggleEnabled="true">
 
@@ -101,21 +100,23 @@
                     android:id="@+id/et_password"
                     style="@style/TextStyle"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="37dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginTop="30dp"
+                    android:layout_weight="1"
                     android:background="@drawable/input_border_bottom"
                     android:cursorVisible="true"
                     android:gravity="center|left|bottom"
                     android:inputType="textPassword"
                     android:maxLength="50"
                     android:paddingBottom="10dp"
-                    android:textColor="@color/black_effective"
-                    android:textSize="18sp"
+                    android:textAppearance="@style/TextAppearance.Text.Regular"
                     android:visibility="invisible" />
 
             </android.support.design.widget.TextInputLayout>
+
+
 
             <Button
                 android:id="@+id/btn_server_login"
@@ -124,9 +125,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="15dp"
+                android:layout_weight="1"
                 android:padding="10dp"
                 android:text="@string/login"
                 android:textSize="18dp" />
+
         </LinearLayout>
 
     </android.support.v7.widget.CardView>

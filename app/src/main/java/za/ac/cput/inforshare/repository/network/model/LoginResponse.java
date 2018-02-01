@@ -18,6 +18,8 @@ package za.ac.cput.inforshare.repository.network.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 /**
  * Created by janisharali on 08/01/17.
  */
@@ -31,6 +33,10 @@ public class LoginResponse {
     @Expose
     @SerializedName("user_id")
     private Long userId;
+
+    @Expose
+    @SerializedName("institution")
+    private List<String> institution;
 
     @Expose
     @SerializedName("access_token")
@@ -63,6 +69,8 @@ public class LoginResponse {
     public String getStatusCode() {
         return statusCode;
     }
+
+    public List<String > getInstitution(){return institution;}
 
     public void setStatusCode(String statusCode) {
         this.statusCode = statusCode;

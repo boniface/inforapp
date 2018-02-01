@@ -884,11 +884,11 @@ public final class R {
         public static final int transition_position = 0x7f0800d1;
         public static final int transition_scene_layoutid_cache = 0x7f0800d2;
         public static final int transition_transform = 0x7f0800d3;
-        public static final int uniform = 0x7f0800dd;
-        public static final int up = 0x7f0800de;
-        public static final int view_offset_helper = 0x7f0800e0;
-        public static final int visible = 0x7f0800e3;
-        public static final int wrap_content = 0x7f0800e5;
+        public static final int uniform = 0x7f0800db;
+        public static final int up = 0x7f0800dc;
+        public static final int view_offset_helper = 0x7f0800de;
+        public static final int visible = 0x7f0800e1;
+        public static final int wrap_content = 0x7f0800e3;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur = 0x7f090000;
@@ -997,13 +997,13 @@ public final class R {
         public static final int appbar_scrolling_view_behavior = 0x7f0d0024;
         public static final int bottom_sheet_behavior = 0x7f0d0026;
         public static final int character_counter_pattern = 0x7f0d0027;
-        public static final int password_toggle_content_description = 0x7f0d0040;
-        public static final int path_password_eye = 0x7f0d0042;
-        public static final int path_password_eye_mask_strike_through = 0x7f0d0043;
-        public static final int path_password_eye_mask_visible = 0x7f0d0044;
-        public static final int path_password_strike_through = 0x7f0d0045;
-        public static final int search_menu_title = 0x7f0d0050;
-        public static final int status_bar_notification_info_overflow = 0x7f0d0053;
+        public static final int password_toggle_content_description = 0x7f0d003e;
+        public static final int path_password_eye = 0x7f0d0040;
+        public static final int path_password_eye_mask_strike_through = 0x7f0d0041;
+        public static final int path_password_eye_mask_visible = 0x7f0d0042;
+        public static final int path_password_strike_through = 0x7f0d0043;
+        public static final int search_menu_title = 0x7f0d004e;
+        public static final int status_bar_notification_info_overflow = 0x7f0d0051;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat = 0x7f0e0000;
