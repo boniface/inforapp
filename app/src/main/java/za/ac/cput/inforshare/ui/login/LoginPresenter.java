@@ -16,10 +16,6 @@
 package za.ac.cput.inforshare.ui.login;
 
 import com.androidnetworking.error.ANError;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import za.ac.cput.inforshare.R;
 import za.ac.cput.inforshare.repository.DataManager;
 import za.ac.cput.inforshare.repository.network.model.LoginRequest;
@@ -49,9 +45,8 @@ public class LoginPresenter<V extends LoginMvpView> extends BasePresenter<V>
         super(dataManager, schedulerProvider, compositeDisposable);
     }
 
-
     @Override
-    public void onServerLoginClick(String email, String password) {
+    public void onServerLoginClick(String email,String institution, String password) {
         //validate email and password
         if (email == null || email.isEmpty()) {
             getMvpView().onError(R.string.empty_email);
@@ -69,71 +64,45 @@ public class LoginPresenter<V extends LoginMvpView> extends BasePresenter<V>
 
         getCompositeDisposable().add(getDataManager()
                 .doServerLoginApiCall(new LoginRequest.ServerLoginRequest(email, password))
-            .subscribeOn(getSchedulerProvider().io())
-            .observeOn(getSchedulerProvider().ui())
-            .subscribe(new Consumer<LoginResponse>() {
-        @Override
-        public void accept(LoginResponse response) throws Exception {
-            getDataManager().updateUserInfo(
-                    response.getAccessToken(),
-                    response.getUserId(),
-                    DataManager.LoggedInMode.LOGGED_IN_MODE_SERVER,
-                    response.getUserName(),
-                    response.getUserEmail(),
-                    response.getGoogleProfilePicUrl());
+                .subscribeOn(getSchedulerProvider().io())
+                .observeOn(getSchedulerProvider().ui())
+                .subscribe(new Consumer<LoginResponse>() {
+                    @Override
+                    public void accept(LoginResponse response) throws Exception {
+                        getDataManager().updateUserInfo(
+                                response.getAccessToken(),
+                                response.getUserId(),
+                                DataManager.LoggedInMode.LOGGED_IN_MODE_SERVER,
+                                response.getUserName(),
+                                response.getUserEmail(),
+                                response.getGoogleProfilePicUrl());
 
-            if (!isViewAttached()) {
-                return;
-            }
+                        if (!isViewAttached()) {
+                            return;
+                        }
 
-            getMvpView().hideLoading();
-            getMvpView().openMainActivity();
+                        getMvpView().hideLoading();
+                        getMvpView().openMainActivity();
 
-        }
-    }, new Consumer<Throwable>() {
-        @Override
-        public void accept(Throwable throwable) throws Exception {
+                    }
+                }, new Consumer<Throwable>() {
+                    @Override
+                    public void accept(Throwable throwable) throws Exception {
 
-            if (!isViewAttached()) {
-                return;
-            }
+                        if (!isViewAttached()) {
+                            return;
+                        }
 
-            getMvpView().hideLoading();
+                        getMvpView().hideLoading();
 
-            // handle the login error here
-            if (throwable instanceof ANError) {
-                ANError anError = (ANError) throwable;
-                handleApiError(anError);
-            }
-        }
-    }));
-}
-    @Override
-    public List<String> generateInstitution(){
-        List<String> dummy=new ArrayList();
-        dummy.add("CPUT");
-        dummy.add("FID");
-        dummy.add("ENG");
-        return dummy;
-
+                        // handle the login error here
+                        if (throwable instanceof ANError) {
+                            ANError anError = (ANError) throwable;
+                            handleApiError(anError);
+                        }
+                    }
+                }));
     }
-
-    @Override
-    public boolean checkEmail(String email){
-
-        if (email == null || email.isEmpty()) {
-            getMvpView().onError(R.string.empty_email);
-            return false;
-        }
-        if (!CommonUtils.isEmailValid(email)) {
-            getMvpView().onError(R.string.invalid_email);
-            return false;
-        }
-
-        return true;
-
-    }
-
 
 
 }

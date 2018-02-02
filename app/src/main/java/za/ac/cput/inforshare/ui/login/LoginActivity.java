@@ -19,7 +19,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 
@@ -49,8 +48,6 @@ public class LoginActivity extends BaseActivity implements LoginMvpView {
     @BindView(R.id.et_password)
     EditText mPasswordEditText;
 
-    int clicks=0;
-
     public static Intent getStartIntent(Context context) {
         Intent intent = new Intent(context, LoginActivity.class);
         return intent;
@@ -70,23 +67,8 @@ public class LoginActivity extends BaseActivity implements LoginMvpView {
 
     @OnClick(R.id.btn_server_login)
     void onServerLoginClick(View v) {
-        ArrayAdapter<String> spinnerAdapter;
-        if(clicks<=1){
-            if(mPresenter.checkEmail(mEmailEditText.getText().toString())){
-                spinnerAdapter=new ArrayAdapter(getApplicationContext(),R.layout.support_simple_spinner_dropdown_item,mPresenter.generateInstitution());
-                spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                mSpinner.setAdapter(spinnerAdapter);
-                mSpinner.setVisibility(View.VISIBLE);
-                mPasswordEditText.setVisibility(View.VISIBLE);
-                clicks++;
-            }
-            if (clicks>1){
-
-                mPresenter.onServerLoginClick(mEmailEditText.getText().toString(), mPasswordEditText.getText().toString());
-            }
-        }
-     //   mPresenter.onServerLoginClick(mEmailEditText.getText().toString(),mSpinner.getSelectedItem().toString(),
-     //           mPasswordEditText.getText().toString());
+        mPresenter.onServerLoginClick(mEmailEditText.getText().toString(),mSpinner.getSelectedItem().toString(),
+                mPasswordEditText.getText().toString());
     }
 
     @Override

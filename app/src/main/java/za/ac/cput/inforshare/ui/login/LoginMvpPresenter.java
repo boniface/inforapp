@@ -16,8 +16,6 @@
 package za.ac.cput.inforshare.ui.login;
 
 
-import java.util.List;
-
 import za.ac.cput.inforshare.di.PerActivity;
 import za.ac.cput.inforshare.ui.base.MvpPresenter;
 
@@ -28,11 +26,7 @@ import za.ac.cput.inforshare.ui.base.MvpPresenter;
 @PerActivity
 public interface LoginMvpPresenter<V extends LoginMvpView> extends MvpPresenter<V> {
 
-    void onServerLoginClick(String email, String password);
-    boolean checkEmail(String email);
-
-    List<String> generateInstitution();
-    //List<String> onServerLoginClick(String email);
+    void onServerLoginClick(String email,String institution, String password);
 
 
 
