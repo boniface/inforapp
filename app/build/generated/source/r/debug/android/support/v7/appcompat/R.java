@@ -675,9 +675,9 @@ public final class R {
         public static final int titleDividerNoCustom = 0x7f0800c8;
         public static final int title_template = 0x7f0800c9;
         public static final int topPanel = 0x7f0800cd;
-        public static final int uniform = 0x7f0800db;
-        public static final int up = 0x7f0800dc;
-        public static final int wrap_content = 0x7f0800e3;
+        public static final int uniform = 0x7f0800dd;
+        public static final int up = 0x7f0800de;
+        public static final int wrap_content = 0x7f0800e5;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur = 0x7f090000;
@@ -755,8 +755,8 @@ public final class R {
         public static final int abc_shareactionprovider_share_with = 0x7f0d001b;
         public static final int abc_shareactionprovider_share_with_application = 0x7f0d001c;
         public static final int abc_toolbar_collapse_description = 0x7f0d001d;
-        public static final int search_menu_title = 0x7f0d004e;
-        public static final int status_bar_notification_info_overflow = 0x7f0d0051;
+        public static final int search_menu_title = 0x7f0d0050;
+        public static final int status_bar_notification_info_overflow = 0x7f0d0053;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat = 0x7f0e0000;

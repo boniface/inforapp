@@ -74,7 +74,7 @@ MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Hunter\.g
 	android:label
 		ADDED from C:\Users\Hunter\StudioProjects\inforapp\app\src\main\AndroidManifest.xml:25:9-41
 	android:icon
-		ADDED from C:\Users\Hunter\StudioProjects\inforapp\app\src\main\AndroidManifest.xml:24:9-36
+		ADDED from C:\Users\Hunter\StudioProjects\inforapp\app\src\main\AndroidManifest.xml:24:9-43
 	android:allowBackup
 		ADDED from C:\Users\Hunter\StudioProjects\inforapp\app\src\main\AndroidManifest.xml:23:9-35
 	android:theme
