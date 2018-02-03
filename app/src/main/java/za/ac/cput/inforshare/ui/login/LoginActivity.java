@@ -67,8 +67,7 @@ public class LoginActivity extends BaseActivity implements LoginMvpView {
 
     @OnClick(R.id.btn_server_login)
     void onServerLoginClick(View v) {
-        mPresenter.onServerLoginClick(mEmailEditText.getText().toString(),mSpinner.getSelectedItem().toString(),
-                mPasswordEditText.getText().toString());
+        mPresenter.onServerLoginClick(mEmailEditText.getText().toString(),mPasswordEditText.getText().toString());
     }
 
     @Override
