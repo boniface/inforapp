@@ -52,7 +52,7 @@
     <string name="empty_password">Please provide a non empty password.</string>
 
     <!--about fragment-->
-    <string name="project_info">This sample app implements MVP architecture using Dagger2, GreenDao, RxJava, FastAndroidNetworking and PlaceholderView</string>
+    <string name="project_info">This sample infoshare App for testing</string>
     <string name="link_mvp_blog">1. https://blog.mindorks.com</string>
     <string name="link_mvp_repo">2. https://github.com/MindorksOpenSource/android-mvp-architecture</string>
     <string name="link_mindorks_blog">3. https://blog.mindorks.com</string>
