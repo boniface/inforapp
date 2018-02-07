@@ -87,8 +87,8 @@ public class FeedActivity extends BaseActivity implements FeedMvpView {
 
         mViewPager.setAdapter(mPagerAdapter);
 
-        mTabLayout.addTab(mTabLayout.newTab().setText(getString(R.string.blog)));
-        mTabLayout.addTab(mTabLayout.newTab().setText(getString(R.string.open_source)));
+        mTabLayout.addTab(mTabLayout.newTab().setText(getString(R.string.stories)));
+        mTabLayout.addTab(mTabLayout.newTab().setText(getString(R.string.my_submission)));
 
         mViewPager.setOffscreenPageLimit(mTabLayout.getTabCount());
 
