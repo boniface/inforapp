@@ -24,4 +24,17 @@ import za.ac.cput.inforshare.ui.base.MvpView;
 
 public interface FeedMvpPresenter<V extends MvpView> extends MvpPresenter<V> {
 
+    void onDrawerOptionAboutClick();
+
+    void onDrawerOptionLogoutClick();
+
+    void onDrawerRateUsClick();
+
+    void onDefaultLoad();
+
+    void onViewInitialized();
+
+    void onCardExhausted();
+
+    void onNavMenuCreated();
 }

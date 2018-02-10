@@ -30,6 +30,7 @@ import java.util.List;
 
 import za.ac.cput.inforshare.R;
 import za.ac.cput.inforshare.ui.base.BaseActivity;
+import za.ac.cput.inforshare.ui.feed.FeedActivity;
 import za.ac.cput.inforshare.ui.main.MainActivity;
 
 import javax.inject.Inject;
@@ -100,7 +101,7 @@ public class LoginActivity extends BaseActivity implements LoginMvpView {
 
     @Override
     public void openMainActivity() {
-        Intent intent = MainActivity.getStartIntent(LoginActivity.this);
+        Intent intent = FeedActivity.getStartIntent(LoginActivity.this);
         startActivity(intent);
         finish();
     }
