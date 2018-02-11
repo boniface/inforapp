@@ -107,7 +107,7 @@ public class MainActivity extends BaseActivity implements MainMvpView {
         mPresenter.onAttach(this);
 
         setUp();
-        mPresenter.onDefaultLoad();
+
     }
 
     @Override
@@ -324,12 +324,6 @@ public class MainActivity extends BaseActivity implements MainMvpView {
                             case R.id.nav_item_about:
                                 mPresenter.onDrawerOptionAboutClick();
                                 return true;
-                            //case R.id.nav_item_rate_us:
-                            //    mPresenter.onDrawerRateUsClick();
-                          //      return true;
-                        //    case R.id.nav_item_feed:
-                          //      mPresenter.onDrawerMyFeedClick();
-                            //    return true;
                             case R.id.nav_item_logout:
                                 mPresenter.onDrawerOptionLogoutClick();
                                 return true;

@@ -21,6 +21,7 @@
             android:checked="true"
             android:icon="@drawable/picture_frame_profile"
             android:title="@string/profile" />
+
         <item
         android:id="@+id/nav_item_about"
         android:checked="true"
