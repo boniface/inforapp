@@ -5,5 +5,5 @@ package za.ac.cput.inforshare.service.login;
  */
 
 public interface LoginService {
-    
+
 }
