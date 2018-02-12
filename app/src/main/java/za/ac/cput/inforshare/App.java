@@ -47,7 +47,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
+//there is an error at this line of code
         mApplicationComponent = DaggerApplicationComponent.builder()
                 .applicationModule(new ApplicationModule(this)).build();
 
@@ -71,5 +71,8 @@ public class App extends Application {
     // Needed to replace the component with a test specific one
     public void setComponent(ApplicationComponent applicationComponent) {
         mApplicationComponent = applicationComponent;
+    }
+    public void setAnotherComponent(ApplicationComponent applicationComponent){
+        mApplicationComponent=applicationComponent;
     }
 }
