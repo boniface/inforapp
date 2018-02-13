@@ -21,31 +21,47 @@ import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
- * Created by janisharali on 08/12/16.
+ * Created by christian on 08/12/16.
  */
 
 @Entity(nameInDb = "user")
 public class User {
 
     @Id(autoincrement = true)
-    private Long id;
+    private Long siteId ;
 
-    @Property(nameInDb = "name")
-    private String name;
+    @Property(nameInDb = "email")
+    private String email ;
 
-    @Property(nameInDb = "created_at")
-    private String createdAt;
+    @Property(nameInDb = "firstName ")
+    private String firstName ;
 
-    @Property(nameInDb = "updated_at")
-    private String updatedAt;
+    @Property(nameInDb = "lastName ")
+    private String lastName ;
+
+    @Property(nameInDb = "screenName  ")
+    private String screenName  ;
+
+    @Property(nameInDb = "password   ")
+    private String password   ;
+
+    @Property(nameInDb = "state")
+    private String state    ;
+
+    @Property(nameInDb = "date")
+    private String date    ;
 
 
     @Generated(hash = 1543916479)
-    public User(Long id, String name, String createdAt, String updatedAt) {
-        this.id = id;
-        this.name = name;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
+    public User(Long siteId , String email , String firstName , String lastName ,String screenName, String password, String state, String date ) {
+        this.siteId  = siteId ;
+        this.email  = email ;
+        this.firstName  = firstName ;
+        this.lastName = lastName ;
+        this.screenName = screenName;
+        this.password = password;
+        this.state = state;
+        this.date = date;
     }
 
     @Generated(hash = 586692638)
@@ -53,35 +69,49 @@ public class User {
     }
 
 
-    public Long getId() {
-        return this.id;
+    public Long getSiteId() {
+        return this.siteId ;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setSiteId(Long siteId ) {
+        this.siteId  = siteId ;
     }
 
-    public String getName() {
-        return this.name;
+    public String getEmail() {
+        return this.email ;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEmail(String email ) {
+        this.email  = email ;
     }
 
-    public String getCreatedAt() {
-        return this.createdAt;
+    public String getFirstName() {
+        return this.firstName ;
     }
 
-    public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
+    public void setFirstName(String firstName ) {
+        this.firstName  = firstName ;
     }
 
-    public String getUpdatedAt() {
-        return this.updatedAt;
+    public String getLastName() {
+        return this.lastName ;
     }
 
-    public void setUpdatedAt(String updatedAt) {
-        this.updatedAt = updatedAt;
+    public void setLastName(String lastName ) {
+        this.lastName  = lastName ;
     }
+
+    public String getScreenName(){return this.screenName;}
+
+    public void setScreenName(String screenName){this.screenName = screenName;}
+
+    public String getPassword(){return this.password;}
+
+    public void setPassword(String password ){this.password = password; }
+
+    public String getState(){return  this.state; }
+
+    public void setState( String state){this.state = state; }
+
+    public String getDate(){return this.date}
 }
