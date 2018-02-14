@@ -5,6 +5,8 @@ import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Property;
 
+import java.time.LocalDateTime;
+
 /**
  * Created by christian on 2018/02/11.
  */
@@ -18,14 +20,14 @@ public class ValidUser {
     private String userId  ;
 
     @Property(nameInDb = "date")
-    private String date;
+    private LocalDateTime date;
 
     @Property(nameInDb = "action  ")
     private String action  ;
 
 
     @Generated(hash = 1543916479)
-    public ValidUser(String siteId , String userId  ,String date, String action  ) {
+    public ValidUser(String siteId , String userId  ,LocalDateTime date, String action  ) {
         this.siteId  = siteId ;
         this.userId   = userId  ;
         this.date = date;
@@ -53,11 +55,11 @@ public class ValidUser {
         this.userId   = userId  ;
     }
 
-    public String getDate() {
+    public LocalDateTime getDate() {
         return this.date;
     }
 
-    public void setDate(String date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 
