@@ -1,11 +1,14 @@
 package za.ac.cput.inforshare.repository.db.model.contents;
 
+import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
  * Created by MUAMBA on 2/14/2018.
  */
 
+
+@Entity(nameInDb = "Source")
 public class Source {
 
     @Property(nameInDb = "org")
