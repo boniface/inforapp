@@ -19,7 +19,6 @@ public class LocationType {
     @Property(nameInDb = "code  ")
     private String code;
 
-
     @Property(nameInDb = "state  ")
     private String state;
 
