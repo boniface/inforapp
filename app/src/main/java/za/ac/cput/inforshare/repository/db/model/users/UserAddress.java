@@ -1,4 +1,4 @@
-package za.ac.cput.inforshare.repository.db.model;
+package za.ac.cput.inforshare.repository.db.model.users;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Generated;
@@ -11,10 +11,10 @@ import org.greenrobot.greendao.annotation.Property;
 @Entity(nameInDb = "UserAddress")
 public class UserAddress {
 
-    @Id(autoincrement = true)
-    private Long emailId;
+    @Id
+    private String emailId;
 
-    @Id(autoincrement = true)
+    @Id
     private Long id;
 
     @Property(nameInDb = "addressTypeId")
@@ -34,7 +34,7 @@ public class UserAddress {
 
 
     @Generated(hash = 1543916479)
-    public UserAddress(Long emailId, Long id, String addressTypeId, String description, String postalCode , String date, String state) {
+    public UserAddress(String emailId, Long id, String addressTypeId, String description, String postalCode , String date, String state) {
         this.emailId = emailId;
         this.id = id;
         this.addressTypeId = addressTypeId;
@@ -48,11 +48,11 @@ public class UserAddress {
     public UserAddress() {
     }
 
-    public Long getEmailId() {
+    public String getEmailId() {
         return this.emailId;
     }
 
-    public void setEmailId(Long emailId) {
+    public void setEmailId(String emailId) {
         this.emailId = emailId;
     }
 

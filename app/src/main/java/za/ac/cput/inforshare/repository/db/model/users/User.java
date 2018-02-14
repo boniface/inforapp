@@ -13,7 +13,7 @@
  * limitations under the License
  */
 
-package za.ac.cput.inforshare.repository.db.model;
+package za.ac.cput.inforshare.repository.db.model.users;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Generated;
@@ -69,6 +69,7 @@ public class User {
     }
 
 
+
     public Long getSiteId() {
         return this.siteId ;
     }
@@ -114,4 +115,8 @@ public class User {
     public void setState( String state){this.state = state; }
 
     public String getDate(){return this.date;}
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 }

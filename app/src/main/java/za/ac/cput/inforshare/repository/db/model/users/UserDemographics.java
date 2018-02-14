@@ -1,4 +1,4 @@
-package za.ac.cput.inforshare.repository.db.model;
+package za.ac.cput.inforshare.repository.db.model.users;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Generated;
@@ -6,27 +6,24 @@ import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
- * Created by christian on 2018/02/13.
+ * Created by hashcode on 2018/02/13.
  */
-
-
-
-@Entity(nameInDb = "UserContact")
-public class UserContact {
-
+@Entity(nameInDb = "UserDemographics")
+public class UserDemographics {
     @Id(autoincrement = true)
     private Long emailId;
 
     @Id(autoincrement = true)
     private Long id;
 
-    @Property(nameInDb = "contactTypeId  ")
-    private String contactTypeId  ;
+    @Property(nameInDb = "genderId   ")
+    private String genderId   ;
 
-    @Property(nameInDb = "contactNumber  ")
-    private String contactNumber  ;
+    @Property(nameInDb = "raceId   ")
+    private String raceId   ;
 
-
+    @Property(nameInDb = "dateOfBirth    ")
+    private String dateOfBirth    ;
 
     @Property(nameInDb = "date")
     private String date;
@@ -36,17 +33,18 @@ public class UserContact {
 
 
     @Generated(hash = 1543916479)
-    public UserContact(Long emailId, Long id, String contactTypeId  , String contactNumber  , String date, String state) {
+    public UserDemographics(Long emailId, Long id, String genderId  , String raceId   ,String dateOfBirth ,String date, String state) {
         this.emailId = emailId;
         this.id = id;
-        this.contactTypeId   = contactTypeId  ;
-        this.contactNumber   = contactNumber  ;
+        this.genderId   = genderId  ;
+        this.raceId    = raceId   ;
+        this.dateOfBirth = dateOfBirth;
         this.date = date;
         this.state = state;
     }
 
     @Generated(hash = 586692638)
-    public UserContact() {
+    public UserDemographics() {
     }
 
     public Long getEmailId() {
@@ -66,20 +64,28 @@ public class UserContact {
         this.id = id;
     }
 
-    public String getContactTypeId() {
-        return this.contactTypeId  ;
+    public String getGenderId() {
+        return this.genderId  ;
     }
 
-    public void setContactTypeId(String contactTypeId  ) {
-        this.contactTypeId   = contactTypeId;
+    public void setGenderId(String genderId  ) {
+        this.genderId   = genderId;
     }
 
-    public String getContactNumber() {
-        return this.contactNumber  ;
+    public String getRaceId() {
+        return this.raceId   ;
     }
 
-    public void setContactNumber(String contactNumber  ) {
-        this.contactNumber   = contactNumber;
+    public void setRaceId(String raceId   ) {
+        this.raceId    = raceId ;
+    }
+
+    public String getDateOfBirth() {
+        return this.dateOfBirth    ;
+    }
+
+    public void setDateOfBirth(String dateOfBirth    ) {
+        this.dateOfBirth     = dateOfBirth  ;
     }
 
     public String getDate() {
