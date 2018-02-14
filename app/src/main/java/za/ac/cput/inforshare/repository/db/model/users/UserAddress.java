@@ -15,7 +15,7 @@ public class UserAddress {
     private String emailId;
 
     @Id
-    private Long id;
+    private String id;
 
     @Property(nameInDb = "addressTypeId")
     private String addressTypeId;
@@ -34,7 +34,7 @@ public class UserAddress {
 
 
     @Generated(hash = 1543916479)
-    public UserAddress(String emailId, Long id, String addressTypeId, String description, String postalCode , String date, String state) {
+    public UserAddress(String emailId, String id, String addressTypeId, String description, String postalCode , String date, String state) {
         this.emailId = emailId;
         this.id = id;
         this.addressTypeId = addressTypeId;
@@ -57,11 +57,11 @@ public class UserAddress {
     }
 
 
-    public Long getId() {
+    public String getId() {
         return this.id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
