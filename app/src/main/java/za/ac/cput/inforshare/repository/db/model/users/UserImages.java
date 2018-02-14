@@ -1,4 +1,4 @@
-package za.ac.cput.inforshare.repository.db.model;
+package za.ac.cput.inforshare.repository.db.model.users;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Generated;
@@ -6,16 +6,16 @@ import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
- * Created by christian on 2018/02/13.
+ * Created by hashcode on 2018/02/13.
  */
 @Entity(nameInDb = "UserImages")
 public class UserImages {
 
-    @Id(autoincrement = true)
-    private long org;
+    @Id
+    private String org;
 
-    @Id(autoincrement = true)
-    private Long emailId;
+    @Id
+    private String emailId;
 
     @Id(autoincrement = true)
     private Long id;
@@ -37,7 +37,7 @@ public class UserImages {
 
 
     @Generated(hash = 1543916479)
-    public UserImages(Long org, Long emailId, Long id, String url   , String description    ,String size  ,String mime , String date ) {
+    public UserImages(String org, String emailId, Long id, String url   , String description    ,String size  ,String mime , String date ) {
         this.org = org;
         this.emailId = emailId;
         this.id = id;
@@ -52,15 +52,15 @@ public class UserImages {
     public UserImages() {
     }
 
-    public long getOrg(){return this.org; }
+    public String getOrg(){return this.org; }
 
-    public void setOrg(Long org){this.org = org;}
+    public void setOrg(String org){this.org = org;}
 
-    public Long getEmailId() {
+    public String getEmailId() {
         return this.emailId;
     }
 
-    public void setEmailId(Long emailId) {
+    public void setEmailId(String emailId) {
         this.emailId = emailId;
     }
 

@@ -1,4 +1,4 @@
-package za.ac.cput.inforshare.repository.db.model;
+package za.ac.cput.inforshare.repository.db.model.users;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Generated;
@@ -14,11 +14,11 @@ import org.greenrobot.greendao.annotation.Property;
 @Entity(nameInDb = "UserContact")
 public class UserContact {
 
-    @Id(autoincrement = true)
-    private Long emailId;
+    @Id
+    private String emailId;
 
-    @Id(autoincrement = true)
-    private Long id;
+    @Id
+    private String id;
 
     @Property(nameInDb = "contactTypeId  ")
     private String contactTypeId  ;
@@ -36,7 +36,7 @@ public class UserContact {
 
 
     @Generated(hash = 1543916479)
-    public UserContact(Long emailId, Long id, String contactTypeId  , String contactNumber  , String date, String state) {
+    public UserContact(String emailId, String id, String contactTypeId  , String contactNumber  , String date, String state) {
         this.emailId = emailId;
         this.id = id;
         this.contactTypeId   = contactTypeId  ;
@@ -49,20 +49,20 @@ public class UserContact {
     public UserContact() {
     }
 
-    public Long getEmailId() {
+    public String getEmailId() {
         return this.emailId;
     }
 
-    public void setEmailId(Long emailId) {
+    public void setEmailId(String emailId) {
         this.emailId = emailId;
     }
 
 
-    public Long getId() {
+    public String getId() {
         return this.id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

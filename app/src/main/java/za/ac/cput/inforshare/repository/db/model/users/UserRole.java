@@ -1,4 +1,4 @@
-package za.ac.cput.inforshare.repository.db.model;
+package za.ac.cput.inforshare.repository.db.model.users;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Generated;
@@ -11,11 +11,11 @@ import org.greenrobot.greendao.annotation.Property;
 @Entity(nameInDb = "UserRole")
 public class UserRole {
 
-    @Id(autoincrement = true)
-    private Long siteId ;
+    @Id
+    private String siteId ;
 
     @Id(autoincrement = true)
-    private Long emailId ;
+    private String emailId ;
 
     @Property(nameInDb = "date")
     private String date;
@@ -25,7 +25,7 @@ public class UserRole {
 
 
     @Generated(hash = 1543916479)
-    public UserRole(Long siteId , Long emailId ,String date, String roleId ) {
+    public UserRole(String siteId , String emailId ,String date, String roleId ) {
         this.siteId  = siteId ;
         this.emailId  = emailId ;
         this.date = date;
@@ -36,20 +36,20 @@ public class UserRole {
     public UserRole() {
     }
 
-    public Long getSiteId() {
+    public String getSiteId() {
         return this.siteId ;
     }
 
-    public void setSiteId(Long siteId) {
+    public void setSiteId(String siteId) {
         this.siteId  = siteId ;
     }
 
 
-    public Long getId() {
+    public String getId() {
         return this.emailId ;
     }
 
-    public void setId(Long emailId ) {
+    public void setId(String emailId ) {
         this.emailId  = emailId ;
     }
 
