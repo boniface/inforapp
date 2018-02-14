@@ -4,11 +4,13 @@ import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Property;
 
+import java.time.LocalDateTime;
+
 /**
  * Created by hashcode on 2/14/2018.
  */
 @Entity(nameInDb = "abuse")
-public class abuse {
+public class Abuse {
 
     @Id
     private String siteId ;
@@ -17,7 +19,7 @@ public class abuse {
     private String commentIdOrResponseId  ;
 
     @Property(nameInDb = "date")
-    private String date;
+    private LocalDateTime date;
 
     @Property(nameInDb = "details  ")
     private String details  ;
@@ -25,7 +27,7 @@ public class abuse {
     @Property(nameInDb = "emailId")
     private String emailId ;
 
-    public abuse (String siteId , String commentIdOrResponseId  ,String date, String details, String emailId  ) {
+    public Abuse (String siteId , String commentIdOrResponseId  ,LocalDateTime date, String details, String emailId  ) {
         this.siteId  = siteId ;
         this.commentIdOrResponseId   = commentIdOrResponseId  ;
         this.date = date;
@@ -33,7 +35,7 @@ public class abuse {
         this.emailId = emailId;
     }
 
-    public abuse() {
+    public Abuse() {
     }
 
     public String getSiteId() {
@@ -53,11 +55,11 @@ public class abuse {
         this.commentIdOrResponseId   = commentIdOrResponseId  ;
     }
 
-    public String getDate() {
+    public LocalDateTime getDate() {
         return this.date;
     }
 
-    public void setDate(String date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 
