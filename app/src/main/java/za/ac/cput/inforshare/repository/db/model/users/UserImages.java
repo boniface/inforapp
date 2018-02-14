@@ -11,10 +11,10 @@ import org.greenrobot.greendao.annotation.Property;
 @Entity(nameInDb = "UserImages")
 public class UserImages {
 
-    @Id(autoincrement = true)
+    @Id
     private String org;
 
-    @Id(autoincrement = true)
+    @Id
     private String emailId;
 
     @Id(autoincrement = true)

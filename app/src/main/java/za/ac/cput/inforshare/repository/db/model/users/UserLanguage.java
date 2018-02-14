@@ -12,11 +12,11 @@ import org.greenrobot.greendao.annotation.Property;
 @Entity(nameInDb = "UserLanguage")
 public class UserLanguage {
 
-    @Id(autoincrement = true)
-    private Long emailId;
+    @Id
+    private String emailId;
 
-    @Id(autoincrement = true)
-    private Long id;
+    @Id
+    private String id;
 
     @Property(nameInDb = "languageId ")
     private String languageId ;
@@ -38,7 +38,7 @@ public class UserLanguage {
 
 
     @Generated(hash = 1543916479)
-    public UserLanguage(Long emailId, Long id, String languageId , String reading , String writing  ,String speaking ,String date, String state) {
+    public UserLanguage(String emailId, String id, String languageId , String reading , String writing  ,String speaking ,String date, String state) {
         this.emailId = emailId;
         this.id = id;
         this.languageId  = languageId ;
@@ -53,20 +53,20 @@ public class UserLanguage {
     public UserLanguage() {
     }
 
-    public Long getEmailId() {
+    public String getEmailId() {
         return this.emailId;
     }
 
-    public void setEmailId(Long emailId) {
+    public void setEmailId(String emailId) {
         this.emailId = emailId;
     }
 
 
-    public Long getId() {
+    public String getId() {
         return this.id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

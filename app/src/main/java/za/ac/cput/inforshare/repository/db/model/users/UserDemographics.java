@@ -10,11 +10,11 @@ import org.greenrobot.greendao.annotation.Property;
  */
 @Entity(nameInDb = "UserDemographics")
 public class UserDemographics {
-    @Id(autoincrement = true)
-    private Long emailId;
+    @Id
+    private String emailId;
 
-    @Id(autoincrement = true)
-    private Long id;
+    @Id
+    private String id;
 
     @Property(nameInDb = "genderId   ")
     private String genderId   ;
@@ -33,7 +33,7 @@ public class UserDemographics {
 
 
     @Generated(hash = 1543916479)
-    public UserDemographics(Long emailId, Long id, String genderId  , String raceId   ,String dateOfBirth ,String date, String state) {
+    public UserDemographics(String emailId, String id, String genderId  , String raceId   ,String dateOfBirth ,String date, String state) {
         this.emailId = emailId;
         this.id = id;
         this.genderId   = genderId  ;
@@ -47,20 +47,20 @@ public class UserDemographics {
     public UserDemographics() {
     }
 
-    public Long getEmailId() {
+    public String getEmailId() {
         return this.emailId;
     }
 
-    public void setEmailId(Long emailId) {
+    public void setEmailId(String emailId) {
         this.emailId = emailId;
     }
 
 
-    public Long getId() {
+    public String getId() {
         return this.id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -11,11 +11,11 @@ import org.greenrobot.greendao.annotation.Property;
 @Entity(nameInDb = "ValidUser")
 public class ValidUser {
 
-    @Id(autoincrement = true)
-    private Long siteId ;
+    @Id
+    private String siteId ;
 
-    @Id(autoincrement = true)
-    private Long userId  ;
+    @Id
+    private String userId  ;
 
     @Property(nameInDb = "date")
     private String date;
@@ -25,7 +25,7 @@ public class ValidUser {
 
 
     @Generated(hash = 1543916479)
-    public ValidUser(Long siteId , Long userId  ,String date, String action  ) {
+    public ValidUser(String siteId , String userId  ,String date, String action  ) {
         this.siteId  = siteId ;
         this.userId   = userId  ;
         this.date = date;
@@ -36,20 +36,20 @@ public class ValidUser {
     public ValidUser() {
     }
 
-    public Long getSiteId() {
+    public String getSiteId() {
         return this.siteId ;
     }
 
-    public void setSiteId(Long siteId) {
+    public void setSiteId(String siteId) {
         this.siteId  = siteId ;
     }
 
 
-    public Long getUserId() {
+    public String getUserId() {
         return this.userId  ;
     }
 
-    public void setUserId(Long userId  ) {
+    public void setUserId(String userId  ) {
         this.userId   = userId  ;
     }
 
