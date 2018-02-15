@@ -6,14 +6,14 @@ import org.greenrobot.greendao.annotation.Property;
  * Created by MUAMBA on 2/15/2018.
  */
 
-public class TokenFailException {
+public class TokenFailException extends Exception {
 
     @Property(nameInDb = "message")
-    private String message;
+    private String message="";
 
     //please verify this
     @Property(nameInDb = "cause  ")
-    private Throwable  cause = null ;
+    private Throwable  cause = null  ;
 
     public TokenFailException(String message, Throwable cause){
         this.message = message;
