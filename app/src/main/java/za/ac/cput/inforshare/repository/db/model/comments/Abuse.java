@@ -1,10 +1,14 @@
 package za.ac.cput.inforshare.repository.db.model.comments;
 
+import org.greenrobot.greendao.DaoException;
+import org.greenrobot.greendao.annotation.Convert;
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Property;
 
-import java.time.LocalDateTime;
+import java.util.Date;
+
 
 /**
  * Created by hashcode on 2/14/2018.
@@ -19,21 +23,21 @@ public class Abuse {
     private String commentIdOrResponseId  ;
 
     @Property(nameInDb = "date")
-    private LocalDateTime date;
+    private Date date;
 
     @Property(nameInDb = "details  ")
     private String details  ;
 
     @Property(nameInDb = "emailId")
     private String emailId ;
-
-    public Abuse (String siteId , String commentIdOrResponseId  ,LocalDateTime date, String details, String emailId  ) {
-        this.siteId  = siteId ;
-        this.commentIdOrResponseId   = commentIdOrResponseId  ;
-        this.date = date;
-        this.details   = details  ;
-        this.emailId = emailId;
-    }
+@Generated(hash = 489798627)
+public Abuse(String siteId, String commentIdOrResponseId, Date date, String details, String emailId) {
+    this.siteId = siteId;
+    this.commentIdOrResponseId = commentIdOrResponseId;
+    this.date = date;
+    this.details = details;
+    this.emailId = emailId;
+}
 
     public Abuse() {
     }
@@ -55,11 +59,11 @@ public class Abuse {
         this.commentIdOrResponseId   = commentIdOrResponseId  ;
     }
 
-    public LocalDateTime getDate() {
+    public Date  getDate() {
         return this.date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
@@ -74,5 +78,11 @@ public class Abuse {
     public String getEmailId(){ return this.emailId; }
 
     public void setEmailId(String emailId){ this.emailId = emailId ; }
+
+    public String getCommentIdOrResponseId() {
+        return this.commentIdOrResponseId;
+    }
+
+
 
 }

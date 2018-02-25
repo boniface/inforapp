@@ -1,6 +1,7 @@
 package za.ac.cput.inforshare.repository.db.model.storage;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
@@ -20,11 +21,15 @@ public class StorageUrl {
     @Property(nameInDb = "url")
     private String url;
 
-    public StorageUrl(String id, String name, String url){
-
+    @Generated(hash = 625888749)
+    public StorageUrl(String id, String name, String url) {
         this.id = id;
         this.name = name;
         this.url = url;
+    }
+
+    @Generated(hash = 1654125154)
+    public StorageUrl() {
     }
 
     public String getId() {

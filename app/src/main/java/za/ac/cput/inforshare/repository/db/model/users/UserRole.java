@@ -14,7 +14,7 @@ public class UserRole {
     @Id
     private String siteId ;
 
-    @Id(autoincrement = true)
+    @Id
     private String emailId ;
 
     @Property(nameInDb = "date")
@@ -24,17 +24,21 @@ public class UserRole {
     private String roleId ;
 
 
-    @Generated(hash = 1543916479)
-    public UserRole(String siteId , String emailId ,String date, String roleId ) {
-        this.siteId  = siteId ;
-        this.emailId  = emailId ;
+    @Generated(hash = 1334766674)
+    public UserRole(String siteId, String emailId, String date, String roleId) {
+        this.siteId = siteId;
+        this.emailId = emailId;
         this.date = date;
-        this.roleId  = roleId ;
+        this.roleId = roleId;
     }
 
-    @Generated(hash = 586692638)
+
+
+    @Generated(hash = 552541888)
     public UserRole() {
     }
+
+
 
     public String getSiteId() {
         return this.siteId ;
@@ -67,5 +71,17 @@ public class UserRole {
 
     public void setRoleId(String roleId ) {
         this.roleId  = roleId ;
+    }
+
+
+
+    public String getEmailId() {
+        return this.emailId;
+    }
+
+
+
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
     }
 }

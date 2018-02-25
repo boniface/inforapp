@@ -1,6 +1,7 @@
 package za.ac.cput.inforshare.repository.db.model.contents;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
@@ -18,13 +19,16 @@ public class ContentType {
     @Property(nameInDb = "description  ")
     private String description;
 
+@Generated(hash = 2075478002)
+public ContentType(String id, String name, String description) {
+    this.id = id;
+    this.name = name;
+    this.description = description;
+}
 
-    public ContentType (String id,String name, String description ) {
-
-        this.id = id;
-        this.name = name;
-        this.description = description;
-    }
+@Generated(hash = 163280486)
+public ContentType() {
+}
 
     public String getId() {
         return id;

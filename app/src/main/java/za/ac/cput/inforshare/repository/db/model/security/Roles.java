@@ -1,6 +1,7 @@
 package za.ac.cput.inforshare.repository.db.model.security;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
@@ -15,12 +16,15 @@ public class Roles {
 
         @Property(nameInDb = "rolename  ")
         private String rolename;
+    @Generated(hash = 595270488)
+    public Roles(String id, String rolename) {
+        this.id = id;
+        this.rolename = rolename;
+    }
 
-        public Roles(String id, String rolename){
-
-            this.id = id;
-            this.rolename = rolename;
-        }
+    @Generated(hash = 1438703163)
+    public Roles() {
+    }
 
     public String getId() {
         return id;

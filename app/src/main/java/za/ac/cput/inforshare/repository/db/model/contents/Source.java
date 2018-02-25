@@ -1,6 +1,7 @@
 package za.ac.cput.inforshare.repository.db.model.contents;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
@@ -23,14 +24,17 @@ public class Source {
     @Property(nameInDb = "description  ")
     private String description;
 
+@Generated(hash = 545315598)
+public Source(String org, String id, String name, String description) {
+    this.org = org;
+    this.id = id;
+    this.name = name;
+    this.description = description;
+}
 
-    public Source (String id,String name, String description ) {
-
-        this.org = org;
-        this.id = id;
-        this.name = name;
-        this.description = description;
-    }
+@Generated(hash = 615387317)
+public Source() {
+}
 
     public String getOrg() {
         return org;

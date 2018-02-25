@@ -1,10 +1,10 @@
 package za.ac.cput.inforshare.repository.db.model.comments;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
-import java.time.LocalDateTime;
-
+import java.util.Date;
 /**
  * Created by MUAMBA on 2/14/2018.
  */
@@ -27,17 +27,19 @@ import java.time.LocalDateTime;
         private String url ;
 
         @Property(nameInDb = "date")
-        private LocalDateTime date;
+        private Date date;
+@Generated(hash = 1812999756)
+public Subject(String siteId, String subjectId, String name, String url, Date date) {
+    this.siteId = siteId;
+    this.subjectId = subjectId;
+    this.name = name;
+    this.url = url;
+    this.date = date;
+}
 
-        public Subject (String siteId,String subjectId, String name, String url,LocalDateTime date  ) {
-
-            this.siteId = siteId;
-            this.subjectId = subjectId;
-            this.name = name;
-            this.url = url;
-            this.date = date;
-
-        }
+@Generated(hash = 1617906264)
+public Subject() {
+}
 
     public String getSiteId() {
         return siteId;
@@ -71,11 +73,11 @@ import java.time.LocalDateTime;
         this.url = url;
     }
 
-    public LocalDateTime getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 }

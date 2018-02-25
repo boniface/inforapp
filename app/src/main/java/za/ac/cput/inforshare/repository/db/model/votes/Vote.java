@@ -1,9 +1,13 @@
 package za.ac.cput.inforshare.repository.db.model.votes;
 
+import android.app.admin.DeviceAdminInfo;
+
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * Created by MUAMBA on 2/15/2018.
@@ -25,20 +29,24 @@ public class Vote {
     private String itemOwnerId;
 
     @Property(nameInDb = "date")
-    private LocalDateTime date;
+    private Date date;
 
     @Property(nameInDb = "status")
     private  String status ;
 
+    @Generated(hash = 539278141)
     public Vote(String siteId, String itemId, String ipAddress, String itemOwnerId,
-                LocalDateTime date, String status){
-
+            Date date, String status) {
         this.siteId = siteId;
         this.itemId = itemId;
         this.ipAddress = ipAddress;
         this.itemOwnerId = itemOwnerId;
         this.date = date;
         this.status = status;
+    }
+
+    @Generated(hash = 1235976307)
+    public Vote() {
     }
 
     public String getSiteId() {
@@ -73,11 +81,11 @@ public class Vote {
         this.itemOwnerId = itemOwnerId;
     }
 
-    public LocalDateTime getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 

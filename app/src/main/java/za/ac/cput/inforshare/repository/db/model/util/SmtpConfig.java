@@ -1,5 +1,6 @@
 package za.ac.cput.inforshare.repository.db.model.util;
 
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
@@ -21,6 +22,7 @@ public class SmtpConfig {
     @Property(nameInDb = "password")
     private String password;
 
+    @Generated
     public SmtpConfig(Integer port, String host, String user, String password) {
 
         this.port = port;

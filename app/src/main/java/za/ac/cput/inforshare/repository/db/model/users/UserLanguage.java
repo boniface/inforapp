@@ -37,21 +37,25 @@ public class UserLanguage {
     private String state;
 
 
-    @Generated(hash = 1543916479)
-    public UserLanguage(String emailId, String id, String languageId , String reading , String writing  ,String speaking ,String date, String state) {
+    @Generated(hash = 324230171)
+    public UserLanguage(String emailId, String id, String languageId, String reading, String writing, String speaking, String date, String state) {
         this.emailId = emailId;
         this.id = id;
-        this.languageId  = languageId ;
-        this.reading  = reading ;
-        this.writing  = writing ;
+        this.languageId = languageId;
+        this.reading = reading;
+        this.writing = writing;
         this.speaking = speaking;
         this.date = date;
         this.state = state;
     }
 
-    @Generated(hash = 586692638)
+
+
+    @Generated(hash = 744920096)
     public UserLanguage() {
     }
+
+
 
     public String getEmailId() {
         return this.emailId;

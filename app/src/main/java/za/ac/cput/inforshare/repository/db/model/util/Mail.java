@@ -1,9 +1,11 @@
 package za.ac.cput.inforshare.repository.db.model.util;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * Created by MUAMBA on 2/15/2018.
@@ -35,11 +37,11 @@ public class Mail {
     private String state;
 
     @Property(nameInDb = "date")
-    private LocalDateTime date;
+    private Date date;
 
+    @Generated(hash = 314186756)
     public Mail(String siteId, String id, String key, String value, String host, String port,
-                String state, LocalDateTime date) {
-
+            String state, Date date) {
         this.siteId = siteId;
         this.id = id;
         this.key = key;
@@ -48,6 +50,10 @@ public class Mail {
         this.port = port;
         this.state = state;
         this.date = date;
+    }
+
+    @Generated(hash = 1943431032)
+    public Mail() {
     }
 
     public String getSiteId() {
@@ -106,11 +112,11 @@ public class Mail {
         this.state = state;
     }
 
-    public LocalDateTime getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 }

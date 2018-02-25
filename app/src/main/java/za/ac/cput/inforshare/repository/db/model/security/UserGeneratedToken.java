@@ -1,6 +1,7 @@
 package za.ac.cput.inforshare.repository.db.model.security;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
@@ -22,12 +23,16 @@ public class UserGeneratedToken {
     @Property(nameInDb = "siteId")
     private String siteId;
 
-    public UserGeneratedToken(String token, String status, String message, String siteId){
-
+    @Generated(hash = 896197455)
+    public UserGeneratedToken(String token, String status, String message, String siteId) {
         this.token = token;
         this.status = status;
         this.message = message;
-        this.siteId= siteId;
+        this.siteId = siteId;
+    }
+
+    @Generated(hash = 1985584277)
+    public UserGeneratedToken() {
     }
 
     public String getToken() {

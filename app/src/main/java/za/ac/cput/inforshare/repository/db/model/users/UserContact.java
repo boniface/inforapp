@@ -35,19 +35,23 @@ public class UserContact {
     private String state;
 
 
-    @Generated(hash = 1543916479)
-    public UserContact(String emailId, String id, String contactTypeId  , String contactNumber  , String date, String state) {
+    @Generated(hash = 1892638314)
+    public UserContact(String emailId, String id, String contactTypeId, String contactNumber, String date, String state) {
         this.emailId = emailId;
         this.id = id;
-        this.contactTypeId   = contactTypeId  ;
-        this.contactNumber   = contactNumber  ;
+        this.contactTypeId = contactTypeId;
+        this.contactNumber = contactNumber;
         this.date = date;
         this.state = state;
     }
 
-    @Generated(hash = 586692638)
+
+
+    @Generated(hash = 1314783920)
     public UserContact() {
     }
+
+
 
     public String getEmailId() {
         return this.emailId;

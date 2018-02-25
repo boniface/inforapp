@@ -32,20 +32,24 @@ public class UserDemographics {
     private String state;
 
 
-    @Generated(hash = 1543916479)
-    public UserDemographics(String emailId, String id, String genderId  , String raceId   ,String dateOfBirth ,String date, String state) {
+    @Generated(hash = 1721813178)
+    public UserDemographics(String emailId, String id, String genderId, String raceId, String dateOfBirth, String date, String state) {
         this.emailId = emailId;
         this.id = id;
-        this.genderId   = genderId  ;
-        this.raceId    = raceId   ;
+        this.genderId = genderId;
+        this.raceId = raceId;
         this.dateOfBirth = dateOfBirth;
         this.date = date;
         this.state = state;
     }
 
-    @Generated(hash = 586692638)
+
+
+    @Generated(hash = 148006030)
     public UserDemographics() {
     }
+
+
 
     public String getEmailId() {
         return this.emailId;

@@ -15,10 +15,11 @@
 
 package za.ac.cput.inforshare.repository.db;
 
-import za.ac.cput.inforshare.repository.db.model.DaoMaster;
-import za.ac.cput.inforshare.repository.db.model.DaoSession;
+
 import za.ac.cput.inforshare.repository.db.model.Option;
 import za.ac.cput.inforshare.repository.db.model.Question;
+import za.ac.cput.inforshare.repository.db.model.comments.DaoMaster;
+import za.ac.cput.inforshare.repository.db.model.comments.DaoSession;
 import za.ac.cput.inforshare.repository.db.model.users.User;
 
 import java.util.List;

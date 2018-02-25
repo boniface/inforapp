@@ -6,6 +6,7 @@ import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Property;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * Created by christian on 2018/02/11.
@@ -20,23 +21,27 @@ public class ValidUser {
     private String userId  ;
 
     @Property(nameInDb = "date")
-    private LocalDateTime date;
+    private Date date;
 
     @Property(nameInDb = "action  ")
     private String action  ;
 
 
-    @Generated(hash = 1543916479)
-    public ValidUser(String siteId , String userId  ,LocalDateTime date, String action  ) {
-        this.siteId  = siteId ;
-        this.userId   = userId  ;
+    @Generated(hash = 609504769)
+    public ValidUser(String siteId, String userId, Date date, String action) {
+        this.siteId = siteId;
+        this.userId = userId;
         this.date = date;
-        this.action   = action  ;
+        this.action = action;
     }
 
-    @Generated(hash = 586692638)
+
+
+    @Generated(hash = 1700679487)
     public ValidUser() {
     }
+
+
 
     public String getSiteId() {
         return this.siteId ;
@@ -55,11 +60,11 @@ public class ValidUser {
         this.userId   = userId  ;
     }
 
-    public LocalDateTime getDate() {
+    public Date getDate() {
         return this.date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 

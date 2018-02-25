@@ -1,6 +1,7 @@
 package za.ac.cput.inforshare.repository.db.model.security;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
@@ -18,11 +19,15 @@ public class Credential {
     @Property(nameInDb = "siteId  ")
     private String siteId;
 
-    public Credential(String email, String password, String siteId){
-
+    @Generated(hash = 1536035939)
+    public Credential(String email, String password, String siteId) {
         this.email = email;
         this.password = password;
         this.siteId = siteId;
+    }
+
+    @Generated(hash = 943805485)
+    public Credential() {
     }
 
     public String getEmail() {

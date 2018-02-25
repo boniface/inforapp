@@ -1,5 +1,6 @@
 package za.ac.cput.inforshare.repository.db.model.security;
 
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
@@ -11,10 +12,12 @@ public class TokenFailException extends Exception {
     @Property(nameInDb = "message")
     private String message="";
 
+    static final long serialVersionUID = 0;
     //please verify this
     @Property(nameInDb = "cause  ")
     private Throwable  cause = null  ;
 
+    @Generated
     public TokenFailException(String message, Throwable cause){
         this.message = message;
         this.cause = cause;

@@ -33,8 +33,8 @@ public class UserAddress {
     private String state;
 
 
-    @Generated(hash = 1543916479)
-    public UserAddress(String emailId, String id, String addressTypeId, String description, String postalCode , String date, String state) {
+    @Generated(hash = 1252977013)
+    public UserAddress(String emailId, String id, String addressTypeId, String description, String postalCode, String date, String state) {
         this.emailId = emailId;
         this.id = id;
         this.addressTypeId = addressTypeId;
@@ -44,9 +44,13 @@ public class UserAddress {
         this.state = state;
     }
 
-    @Generated(hash = 586692638)
+
+
+    @Generated(hash = 1066331545)
     public UserAddress() {
     }
+
+
 
     public String getEmailId() {
         return this.emailId;
@@ -103,5 +107,11 @@ public class UserAddress {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+
+
+    public String getAddressTypeId() {
+        return this.addressTypeId;
     }
 }

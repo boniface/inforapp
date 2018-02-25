@@ -1,6 +1,7 @@
 package za.ac.cput.inforshare.repository.db.model.security;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
@@ -12,10 +13,13 @@ public class LogInStatus {
 
     @Property(nameInDb = "status")
     private String status;
-
-    public LogInStatus(String status){
-
+    @Generated(hash = 1364294609)
+    public LogInStatus(String status) {
         this.status = status;
+    }
+
+    @Generated(hash = 1944898521)
+    public LogInStatus() {
     }
 
     public String getStatus() {
