@@ -1,6 +1,7 @@
 package za.ac.cput.inforshare.repository.db.model.contents;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 
@@ -22,13 +23,16 @@ public class Category {
     @Property(nameInDb = "description  ")
     private String description;
 
+@Generated(hash = 505596883)
+public Category(String id, String name, String description) {
+    this.id = id;
+    this.name = name;
+    this.description = description;
+}
 
-    public Category (String id,String name, String description ) {
-
-        this.id = id;
-        this.name = name;
-        this.description = description;
-    }
+@Generated(hash = 1150634039)
+public Category() {
+}
 
     public String getId() {
         return id;

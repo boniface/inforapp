@@ -1,9 +1,12 @@
 package za.ac.cput.inforshare.repository.db.model.comments;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
-import java.time.LocalDateTime;
+import java.util.Date;
+
+
 
 /**
  * Created by MUAMBA on 2/14/2018.
@@ -19,14 +22,17 @@ public class CommentStatus {
     private String status;
 
     @Property(nameInDb = "date")
-    private LocalDateTime date;
+    private Date date;
+@Generated(hash = 1923263259)
+public CommentStatus(String commentId, String status, Date date) {
+    this.commentId = commentId;
+    this.status = status;
+    this.date = date;
+}
 
-    public CommentStatus (String commentId ,String status ,LocalDateTime date  ) {
-
-        this.commentId = commentId;
-        this.status = status;
-        this.date = date;
-    }
+@Generated(hash = 2136910496)
+public CommentStatus() {
+}
 
     public String getCommentId() {
         return commentId;
@@ -44,11 +50,11 @@ public class CommentStatus {
         this.status = status;
     }
 
-    public LocalDateTime getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 }

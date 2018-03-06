@@ -1,9 +1,11 @@
 package za.ac.cput.inforshare.repository.db.model.util;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * Created by MUAMBA on 2/15/2018.
@@ -16,7 +18,7 @@ public class ItemStatus {
     private String itemId;
 
     @Property(nameInDb = "date")
-    private LocalDateTime date;
+    private Date date;
 
     @Property(nameInDb = "status")
     private String status;
@@ -24,12 +26,16 @@ public class ItemStatus {
     @Property(nameInDb = "description")
     private String description;
 
-    public ItemStatus(String itemId, LocalDateTime date, String status, String description){
+    @Generated(hash = 970992038)
+    public ItemStatus(String itemId, Date date, String status, String description) {
+        this.itemId = itemId;
+        this.date = date;
+        this.status = status;
+        this.description = description;
+    }
 
-       this.itemId = itemId;
-       this.date = date;
-       this.status = status;
-       this.description = description;
+    @Generated(hash = 430409100)
+    public ItemStatus() {
     }
 
     public String getItemId() {
@@ -40,11 +46,11 @@ public class ItemStatus {
         this.itemId = itemId;
     }
 
-    public LocalDateTime getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 

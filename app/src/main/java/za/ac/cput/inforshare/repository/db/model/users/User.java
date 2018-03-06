@@ -20,6 +20,8 @@ import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Property;
 
+import java.util.Date;
+
 /**
  * Created by christian on 08/12/16.
  */
@@ -49,24 +51,28 @@ public class User {
     private String state    ;
 
     @Property(nameInDb = "date")
-    private String date    ;
+    private Date date    ;
 
 
-    @Generated(hash = 1543916479)
-    public User(Long siteId , String email , String firstName , String lastName ,String screenName, String password, String state, String date ) {
-        this.siteId  = siteId ;
-        this.email  = email ;
-        this.firstName  = firstName ;
-        this.lastName = lastName ;
+    @Generated(hash = 1832431155)
+    public User(Long siteId, String email, String firstName, String lastName, String screenName, String password, String state, Date date) {
+        this.siteId = siteId;
+        this.email = email;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.screenName = screenName;
         this.password = password;
         this.state = state;
         this.date = date;
     }
 
+
+
+
     @Generated(hash = 586692638)
     public User() {
     }
+
 
 
 
@@ -114,9 +120,9 @@ public class User {
 
     public void setState( String state){this.state = state; }
 
-    public String getDate(){return this.date;}
+    public Date getDate(){return this.date;}
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 }

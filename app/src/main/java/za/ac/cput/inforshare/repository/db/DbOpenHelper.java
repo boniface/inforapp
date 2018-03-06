@@ -17,9 +17,10 @@ package za.ac.cput.inforshare.repository.db;
 
 import android.content.Context;
 
-import za.ac.cput.inforshare.repository.db.model.DaoMaster;
+
 import za.ac.cput.inforshare.di.ApplicationContext;
 import za.ac.cput.inforshare.di.DatabaseInfo;
+import za.ac.cput.inforshare.repository.db.model.comments.DaoMaster;
 import za.ac.cput.inforshare.utils.AppLogger;
 
 import org.greenrobot.greendao.database.Database;

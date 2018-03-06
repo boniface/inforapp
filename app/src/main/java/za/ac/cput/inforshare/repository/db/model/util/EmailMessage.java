@@ -1,7 +1,9 @@
 package za.ac.cput.inforshare.repository.db.model.util;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
+import org.greenrobot.greendao.annotation.Transient;
 
 /**
  * Created by MUAMBA on 2/15/2018.
@@ -26,18 +28,20 @@ public class EmailMessage {
     @Property(nameInDb = "html")
     private String html;
 
-    @Property(nameInDb = "smtpConfig")
+    @Transient
     private SmtpConfig smtpConfig; // i'm not very sure about this line of code
 
-    public EmailMessage(String subject, String recipient, String from, String text, String html,
-                        SmtpConfig smtpConfig ){
-
+    @Generated(hash = 75168220)
+    public EmailMessage(String subject, String recipient, String from, String text, String html) {
         this.subject = subject;
         this.recipient = recipient;
         this.from = from;
         this.text = text;
         this.html = html;
-        this.smtpConfig = smtpConfig;
+    }
+
+    @Generated(hash = 2006509433)
+    public EmailMessage() {
     }
 
     public String getSubject() {

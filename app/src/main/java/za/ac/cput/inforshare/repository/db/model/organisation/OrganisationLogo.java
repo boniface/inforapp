@@ -1,9 +1,11 @@
 package za.ac.cput.inforshare.repository.db.model.organisation;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * Created by MUAMBA on 2/15/2018.
@@ -31,11 +33,10 @@ public class OrganisationLogo {
     private String mime;
 
     @Property(nameInDb = "date  ")
-    private LocalDateTime date;
+    private Date date;
 
-
-    public OrganisationLogo (String org, String id,String url , String size, String description, String mime, LocalDateTime date ) {
-
+    @Generated(hash = 1167166464)
+    public OrganisationLogo(String org, String id, String url, String size, String description, String mime, Date date) {
         this.org = org;
         this.id = id;
         this.url = url;
@@ -43,6 +44,10 @@ public class OrganisationLogo {
         this.description = description;
         this.mime = mime;
         this.date = date;
+    }
+
+    @Generated(hash = 1440629347)
+    public OrganisationLogo() {
     }
 
     public String getOrg() {
@@ -93,11 +98,11 @@ public class OrganisationLogo {
         this.mime = mime;
     }
 
-    public LocalDateTime getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 }

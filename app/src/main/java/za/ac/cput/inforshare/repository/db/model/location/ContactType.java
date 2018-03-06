@@ -1,6 +1,7 @@
 package za.ac.cput.inforshare.repository.db.model.location;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
@@ -19,13 +20,16 @@ public class ContactType {
     @Property(nameInDb = "state  ")
     private String state;
 
+@Generated(hash = 887723114)
+public ContactType(String id, String name, String state) {
+    this.id = id;
+    this.name = name;
+    this.state = state;
+}
 
-    public ContactType (String id,String name, String state ) {
-
-        this.id = id;
-        this.name = name;
-        this.state = state;
-    }
+@Generated(hash = 913865843)
+public ContactType() {
+}
 
     public String getId() {
         return id;

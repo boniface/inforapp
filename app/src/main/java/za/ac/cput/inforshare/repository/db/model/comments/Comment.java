@@ -1,9 +1,11 @@
 package za.ac.cput.inforshare.repository.db.model.comments;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Property;
 
+import java.util.Date;
 import java.time.LocalDateTime;
 
 /**
@@ -32,19 +34,21 @@ public class Comment {
     private String ipaddress;
 
     @Property(nameInDb = "date")
-    private LocalDateTime date;
+    private Date date;
+@Generated(hash = 1779598993)
+public Comment(String siteId, String subjectId, String commentId, String comment, String emailId, String ipaddress, Date date) {
+    this.siteId = siteId;
+    this.subjectId = subjectId;
+    this.commentId = commentId;
+    this.comment = comment;
+    this.emailId = emailId;
+    this.ipaddress = ipaddress;
+    this.date = date;
+}
 
-    public Comment (String siteId , String subjectId  ,String commentId,String comment, String emailId, String ipaddress,LocalDateTime date  ) {
-        this.siteId  = siteId ;
-        this.subjectId   = subjectId  ;
-        this.commentId = commentId;
-        this.comment = comment;
-        this.emailId = emailId;
-        this.ipaddress = ipaddress;
-        this.date = date;
-
-
-    }
+@Generated(hash = 1669165771)
+public Comment() {
+}
 
     public String getSiteId() {
         return siteId;
@@ -94,11 +98,11 @@ public class Comment {
         this.ipaddress = ipaddress;
     }
 
-    public LocalDateTime getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 }

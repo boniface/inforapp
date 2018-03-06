@@ -1,6 +1,7 @@
 package za.ac.cput.inforshare.repository.db.model.demographics;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
@@ -22,14 +23,17 @@ public class Role {
     @Property(nameInDb = "state  ")
     private String state;
 
+@Generated(hash = 1751246481)
+public Role(String id, String name, String description, String state) {
+    this.id = id;
+    this.name = name;
+    this.description = description;
+    this.state = state;
+}
 
-    public Role (String id,String name, String description, String state ) {
-
-        this.id = id;
-        this.name = name;
-        this.description = description;
-        this.state = state;
-    }
+@Generated(hash = 844947497)
+public Role() {
+}
 
     public String getId() {
         return id;

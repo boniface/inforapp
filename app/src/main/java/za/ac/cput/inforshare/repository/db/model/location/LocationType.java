@@ -1,6 +1,7 @@
 package za.ac.cput.inforshare.repository.db.model.location;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
@@ -22,14 +23,17 @@ public class LocationType {
     @Property(nameInDb = "state  ")
     private String state;
 
+@Generated(hash = 181863257)
+public LocationType(String id, String name, String code, String state) {
+    this.id = id;
+    this.name = name;
+    this.code = code;
+    this.state = state;
+}
 
-    public LocationType (String id,String name, String code, String state ) {
-
-        this.id = id;
-        this.name = name;
-        this.code = code;
-        this.state = state;
-    }
+@Generated(hash = 317781457)
+public LocationType() {
+}
 
     public String getId() {
         return id;

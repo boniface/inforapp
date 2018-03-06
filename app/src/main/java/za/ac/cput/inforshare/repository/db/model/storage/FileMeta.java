@@ -1,6 +1,7 @@
 package za.ac.cput.inforshare.repository.db.model.storage;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
@@ -17,10 +18,14 @@ public class FileMeta {
     @Property(nameInDb = "contentType")
     private String contentType;
 
-    public FileMeta(String fileName, String contentType){
-
+    @Generated(hash = 596481423)
+    public FileMeta(String fileName, String contentType) {
         this.fileName = fileName;
         this.contentType = contentType;
+    }
+
+    @Generated(hash = 156030689)
+    public FileMeta() {
     }
 
     public String getFileName() {

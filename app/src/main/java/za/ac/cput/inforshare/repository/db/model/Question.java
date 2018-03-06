@@ -26,6 +26,7 @@ import org.greenrobot.greendao.annotation.Property;
 import org.greenrobot.greendao.annotation.ToMany;
 
 import java.util.List;
+import za.ac.cput.inforshare.repository.db.model.comments.DaoSession;
 
 /**
  * Created by janisharali on 08/12/16.

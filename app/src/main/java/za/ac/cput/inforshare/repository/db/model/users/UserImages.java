@@ -36,21 +36,23 @@ public class UserImages {
     private String date ;
 
 
-    @Generated(hash = 1543916479)
-    public UserImages(String org, String emailId, Long id, String url   , String description    ,String size  ,String mime , String date ) {
+    @Generated(hash = 1953133921)
+    public UserImages(String org, String emailId, Long id, String url, String description, String size, String mime, String date) {
         this.org = org;
         this.emailId = emailId;
         this.id = id;
-        this.url = url   ;
-        this.description  = description    ;
-        this.size  = size ;
-        this.mime  = mime ;
-        this.date  = date ;
+        this.url = url;
+        this.description = description;
+        this.size = size;
+        this.mime = mime;
+        this.date = date;
     }
 
-    @Generated(hash = 586692638)
+
+    @Generated(hash = 2023128448)
     public UserImages() {
     }
+
 
     public String getOrg(){return this.org; }
 

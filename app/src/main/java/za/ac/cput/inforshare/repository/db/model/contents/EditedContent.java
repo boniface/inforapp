@@ -1,10 +1,10 @@
 package za.ac.cput.inforshare.repository.db.model.contents;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
-import java.time.LocalDateTime;
-
+import java.util.Date;
 /**
  * Created by MUAMBA on 2/14/2018.
  */
@@ -18,7 +18,7 @@ public class EditedContent {
     private String id;
 
     @Property(nameInDb = "dateCreated  ")
-    private LocalDateTime dateCreated;
+    private Date dateCreated;
 
     @Property(nameInDb = "creator  ")
     private String creator;
@@ -43,23 +43,26 @@ public class EditedContent {
 
     @Property(nameInDb = "state  ")
     private String state;
+@Generated(hash = 1774180621)
+public EditedContent(String org, String id, Date dateCreated, String creator, String source,
+        String category, String title, String content, String contentTypeId, String status,
+        String state) {
+    this.org = org;
+    this.id = id;
+    this.dateCreated = dateCreated;
+    this.creator = creator;
+    this.source = source;
+    this.category = category;
+    this.title = title;
+    this.content = content;
+    this.contentTypeId = contentTypeId;
+    this.status = status;
+    this.state = state;
+}
 
-    public EditedContent (String org, String id,LocalDateTime dateCreated, String creator, String source,
-                          String category, String title, String content, String ContentTypeId,
-                          String status, String state ) {
-
-        this.org = org;
-        this.id = id;
-        this.dateCreated = dateCreated;
-        this.creator = creator;
-        this.source = source;
-        this.category = category;
-        this.title = title;
-        this.content = content;
-        this.contentTypeId = contentTypeId;
-        this.status = status;
-        this.state = state;
-    }
+@Generated(hash = 231563446)
+public EditedContent() {
+}
 
     public String getOrg() {
         return org;
@@ -77,11 +80,11 @@ public class EditedContent {
         this.id = id;
     }
 
-    public LocalDateTime getDateCreated() {
+    public Date getDateCreated() {
         return dateCreated;
     }
 
-    public void setDateCreated(LocalDateTime dateCreated) {
+    public void setDateCreated(Date dateCreated) {
         this.dateCreated = dateCreated;
     }
 

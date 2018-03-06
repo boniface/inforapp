@@ -1,6 +1,7 @@
 package za.ac.cput.inforshare.repository.db.model.util;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
@@ -20,12 +21,15 @@ public class Keys {
     @Property(nameInDb = "status")
     private String status;
 
-
-    public Keys(String id, String value, String status){
-
+    @Generated(hash = 502959100)
+    public Keys(String id, String value, String status) {
         this.id = id;
         this.value = value;
         this.status = status;
+    }
+
+    @Generated(hash = 1245444004)
+    public Keys() {
     }
 
     public String getId() {

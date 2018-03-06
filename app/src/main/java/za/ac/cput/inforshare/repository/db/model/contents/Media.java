@@ -1,10 +1,10 @@
 package za.ac.cput.inforshare.repository.db.model.contents;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
-import java.time.LocalDateTime;
-
+import java.util.Date;
 /**
  * Created by MUAMBA on 2/14/2018.
  */
@@ -28,22 +28,25 @@ public class Media {
     private String mime;
 
     @Property(nameInDb = "date  ")
-    private LocalDateTime date;
+    private Date date;
 
     @Property(nameInDb = "state  ")
     private String state;
+@Generated(hash = 582985330)
+public Media(String contentId, String id, String description, String url, String mime,
+        Date date, String state) {
+    this.contentId = contentId;
+    this.id = id;
+    this.description = description;
+    this.url = url;
+    this.mime = mime;
+    this.date = date;
+    this.state = state;
+}
 
-  public Media(String contentId, String id, String description, String url, String mime,
-               LocalDateTime date, String state) {
-
-      this.contentId = contentId;
-      this.id = id;
-      this.description = description;
-      this.url = url;
-      this.mime = mime;
-      this.date = date;
-      this.state = state;
-  }
+@Generated(hash = 551662551)
+public Media() {
+}
 
     public String getContentId() {
         return contentId;
@@ -85,11 +88,11 @@ public class Media {
         this.mime = mime;
     }
 
-    public LocalDateTime getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 

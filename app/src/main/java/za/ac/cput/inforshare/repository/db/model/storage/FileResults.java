@@ -1,6 +1,7 @@
 package za.ac.cput.inforshare.repository.db.model.storage;
 
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Property;
 
 /**
@@ -23,13 +24,17 @@ public class FileResults {
     @Property(nameInDb = "mime")
     private String mime;
 
-  public FileResults(String id, String url, String size, String mime){
+    @Generated(hash = 967890078)
+    public FileResults(String id, String url, String size, String mime) {
+        this.id = id;
+        this.url = url;
+        this.size = size;
+        this.mime = mime;
+    }
 
-      this.id = id;
-      this.url = url;
-      this.size = size;
-      this.mime = mime;
-  }
+    @Generated(hash = 616794169)
+    public FileResults() {
+    }
 
     public String getId() {
         return id;
